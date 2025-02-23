@@ -186,3 +186,74 @@
 {"level":"error","message":"RabbitMQ connection closed","service":"ticket-booking-service"}
 {"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
 {"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
+{"level":"info","message":"Cloudinary connection verified successfully","service":"ticket-booking-service"}
+{"level":"info","message":"Cloudinary connection verified successfully","service":"ticket-booking-service"}
+{"level":"info","message":"PostgreSQL connected successfully","service":"ticket-booking-service"}
+{"level":"info","message":"MongoDB connected","service":"ticket-booking-service"}
+{"level":"info","message":"Email transport verified","service":"ticket-booking-service"}
+{"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
+{"level":"info","message":"Notification service initialized successfully","service":"ticket-booking-service"}
+{"level":"info","message":"Notification service initialized successfully","service":"ticket-booking-service"}
+{"level":"info","message":"WebSocket server started","service":"ticket-booking-service"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"ticket-booking-service"}
+{"level":"info","message":"Health check available at http://localhost:3000/health","service":"ticket-booking-service"}
+{"level":"info","message":"Cloudinary connection verified successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Cloudinary connection verified","service":"ticket-booking-service"}
+{"level":"info","message":"✅ PostgreSQL connected","service":"ticket-booking-service"}
+{"level":"info","message":"✅ MongoDB connected","service":"ticket-booking-service"}
+{"level":"info","message":"Email transport verified","service":"ticket-booking-service"}
+{"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
+{"level":"info","message":"Notification service initialized successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Notification service initialized","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Server running in development mode on port 3000","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Health check available at http://localhost:3000/health","service":"ticket-booking-service"}
+{"level":"info","message":"✅ WebSocket server started successfully","service":"ticket-booking-service"}
+{"level":"info","message":"Cloudinary connection verified successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Cloudinary connection verified","service":"ticket-booking-service"}
+{"level":"info","message":"✅ PostgreSQL connected","service":"ticket-booking-service"}
+{"level":"info","message":"✅ MongoDB connected","service":"ticket-booking-service"}
+{"level":"info","message":"Email transport verified","service":"ticket-booking-service"}
+{"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
+{"level":"info","message":"Notification service initialized successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Notification service initialized","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Server running in development mode on port 3000","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Health check available at http://localhost:3000/health","service":"ticket-booking-service"}
+{"level":"info","message":"✅ WebSocket server started successfully","service":"ticket-booking-service"}
+{"level":"info","message":"Notification queued: email to heyt5012@gmail.com","service":"ticket-booking-service"}
+{"error":{"code":"EENVELOPE","command":"DATA","response":"421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","responseCode":421},"level":"error","message":"Failed to send email","service":"ticket-booking-service","to":"heyt5012@gmail.com"}
+{"error":"Data command failed: 421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","level":"warn","message":"Retrying 1/3 for notification","recipient":"heyt5012@gmail.com","retryCount":1,"service":"ticket-booking-service"}
+{"error":{"code":"EENVELOPE","command":"DATA","response":"421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","responseCode":421},"level":"error","message":"Failed to send email","service":"ticket-booking-service","to":"heyt5012@gmail.com"}
+{"error":"Data command failed: 421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","level":"warn","message":"Retrying 2/3 for notification","recipient":"heyt5012@gmail.com","retryCount":2,"service":"ticket-booking-service"}
+{"error":{"code":"EENVELOPE","command":"DATA","response":"421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","responseCode":421},"level":"error","message":"Failed to send email","service":"ticket-booking-service","to":"heyt5012@gmail.com"}
+{"error":"Data command failed: 421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","level":"warn","message":"Retrying 3/3 for notification","recipient":"heyt5012@gmail.com","retryCount":3,"service":"ticket-booking-service"}
+{"error":{"code":"EENVELOPE","command":"DATA","response":"421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","responseCode":421},"level":"error","message":"Failed to send email","service":"ticket-booking-service","to":"heyt5012@gmail.com"}
+{"error":"Data command failed: 421 Domain sandbox45685b60f9554de2a03e3d5ca77ddb84.mailgun.org is not allowed to send: Free accounts are for test purposes only. Please upgrade or add the address to authorized recipients in Account Settings.","level":"error","message":"Notification failed after max retries","payload":{"data":{"name":"John Doe","userId":"b13f1823-b075-4e99-82c3-87bf10ee1cfd"},"recipient":"heyt5012@gmail.com","template":"welcome_email","type":"email"},"retryCount":3,"service":"ticket-booking-service"}
+{"level":"info","message":"Cloudinary connection verified successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Cloudinary connection verified","service":"ticket-booking-service"}
+{"level":"info","message":"✅ PostgreSQL connected","service":"ticket-booking-service"}
+{"level":"info","message":"✅ MongoDB connected","service":"ticket-booking-service"}
+{"level":"info","message":"Email transport verified","service":"ticket-booking-service"}
+{"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
+{"level":"info","message":"Notification service initialized successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Notification service initialized","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Server running in development mode on port 3000","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Health check available at http://localhost:3000/health","service":"ticket-booking-service"}
+{"level":"info","message":"✅ WebSocket server started on ws://localhost:${PORT}","service":"ticket-booking-service"}
+{"level":"info","message":"WebSocket server initialized","service":"ticket-booking-service"}
+{"level":"info","message":"Cloudinary connection verified successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Cloudinary connection verified","service":"ticket-booking-service"}
+{"level":"info","message":"✅ PostgreSQL connected","service":"ticket-booking-service"}
+{"level":"info","message":"✅ MongoDB connected","service":"ticket-booking-service"}
+{"level":"info","message":"Email transport verified","service":"ticket-booking-service"}
+{"level":"info","message":"Connected to RabbitMQ","service":"ticket-booking-service"}
+{"level":"info","message":"Notification service initialized successfully","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Notification service initialized","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Server running in development mode on port 3000","service":"ticket-booking-service"}
+{"level":"info","message":"✅ Health check available at http://localhost:3000/health","service":"ticket-booking-service"}
+{"level":"info","message":"✅ WebSocket server started on ws://localhost:${PORT}","service":"ticket-booking-service"}
+{"level":"info","message":"New WebSocket connection attempt","service":"ticket-booking-service"}
+{"level":"info","message":"User b13f1823-b075-4e99-82c3-87bf10ee1cfd connected to WebSocket","service":"ticket-booking-service"}
+{"level":"info","message":"New WebSocket connection attempt","service":"ticket-booking-service"}
+{"level":"info","message":"User b13f1823-b075-4e99-82c3-87bf10ee1cfd connected to WebSocket","service":"ticket-booking-service"}
+{"level":"error","message":"Error processing message: Invalid message format","service":"ticket-booking-service","stack":"Error: Invalid message format\n    at ChatWebSocket.<anonymous> (D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:58:21)\n    at Generator.next (<anonymous>)\n    at D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:4:12)\n    at WebSocket.<anonymous> (D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:53:49)\n    at WebSocket.emit (node:events:524:28)\n    at WebSocket.emit (node:domain:489:12)\n    at Receiver.receiverOnMessage (D:\\Kunj\\codes\\diversion25\\node_modules\\ws\\lib\\websocket.js:1220:20)\n    at Receiver.emit (node:events:524:28)"}
+{"level":"error","message":"Error processing message: Invalid message format","service":"ticket-booking-service","stack":"Error: Invalid message format\n    at ChatWebSocket.<anonymous> (D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:58:21)\n    at Generator.next (<anonymous>)\n    at D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:4:12)\n    at WebSocket.<anonymous> (D:\\Kunj\\codes\\diversion25\\src\\websocket\\chatWebSocket.ts:53:49)\n    at WebSocket.emit (node:events:524:28)\n    at WebSocket.emit (node:domain:489:12)\n    at Receiver.receiverOnMessage (D:\\Kunj\\codes\\diversion25\\node_modules\\ws\\lib\\websocket.js:1220:20)\n    at Receiver.emit (node:events:524:28)"}

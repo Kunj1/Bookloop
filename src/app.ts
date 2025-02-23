@@ -9,11 +9,13 @@ import { AppDataSource } from './config/database';
 import { notificationService } from './services/notificationService';
 import { testCloudinaryConnection } from './config/cloudinary';
 import logger from './utils/logger';
-import { ChatWebSocket } from './websocket/chatWebSocket';
 import { connectMongoDB } from './config/mongodb';
 import { ErrorRequestHandler } from 'express';
+import { createServer } from 'http';
+import { ChatWebSocket } from './websocket/chatWebSocket';
 
 const app = express();
+const server = createServer(app);
 
 // Middleware
 app.use(cors({
@@ -25,6 +27,9 @@ app.use(helmet());
 app.use(morgan('combined'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Initialize WebSocket
+new ChatWebSocket(server);
 
 // Health check endpoint
 app.get('/health', async (req, res) => {
@@ -57,7 +62,7 @@ app.use(errorHandler as ErrorRequestHandler);
 // Service initialization
 async function initializeServices() {
   try {
-    // Verify environment variables
+    // Verify required environment variables
     const requiredEnvVars = [
       'CLOUDINARY_CLOUD_NAME',
       'CLOUDINARY_API_KEY',
@@ -71,45 +76,47 @@ async function initializeServices() {
 
     // Test Cloudinary connection
     await testCloudinaryConnection();
-    logger.info('Cloudinary connection verified successfully');
+    logger.info('✅ Cloudinary connection verified');
 
-    // Connect to database
+    // Connect to databases
     await AppDataSource.initialize();
-    logger.info('PostgreSQL connected successfully');
+    logger.info('✅ PostgreSQL connected');
 
     await connectMongoDB();
-    logger.info('MongoDB connected');
+    logger.info('✅ MongoDB connected');
 
     // Initialize notification service
     await notificationService.initialize();
-    logger.info('Notification service initialized successfully');
+    logger.info('✅ Notification service initialized');
 
     // Start server
     const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      logger.info(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
-      logger.info(`Health check available at http://localhost:${PORT}/health`);
+    server.listen(PORT, () => {
+      logger.info(`✅ Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+      logger.info(`✅ Health check available at http://localhost:${PORT}/health`);
+      logger.info('✅ WebSocket server started on ws://localhost:${PORT}');
     });
+
   } catch (error) {
-    logger.error('Service initialization failed:', error);
+    logger.error('❌ Service initialization failed:', error);
     process.exit(1);
   }
 }
 
 // Error handlers
 process.on('uncaughtException', (error) => {
-  logger.error('Uncaught Exception:', error);
+  logger.error('❌ Uncaught Exception:', error);
   process.exit(1);
 });
 
 process.on('unhandledRejection', (error) => {
-  logger.error('Unhandled Rejection:', error);
+  logger.error('❌ Unhandled Rejection:', error);
   process.exit(1);
 });
 
 // Start application
 initializeServices().catch(error => {
-  logger.error('Failed to start the application:', error);
+  logger.error('❌ Failed to start the application:', error);
   process.exit(1);
 });
 
